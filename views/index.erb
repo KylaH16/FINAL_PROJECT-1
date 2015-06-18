@@ -1,0 +1,33 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Squacoon Sighting Report Form</title>
+    <link rel = "stylesheet" type = "text.css" href = "css/style.css">
+  </head>
+  <body>
+    <h2>Squacoon Sighting Report Form</h2>
+    <form method = "post">
+      <label for "name">Name</label> <input type = "text" name = "name">
+      <br>
+      <label for "contact">Email</label> <input type = "email" name = "contact">
+      <br>
+      <label for "date">Date</label> <input type = "date" name = "date">
+      <br>
+      <label for "emotion">Emotional Response</label> 
+      <select name = "emotion">
+        <option class = "label" value = "panic">Panic</option>
+        <option class = "label" value = "cute">Awwww</option>
+        <option class = "label" value = "Noble">Aw Respect</option>
+      </select>
+      <br>
+      <label for "pass">Password</label> <input type = "password" name ="pass">
+      <br>
+      <label for "question">Are you hallucianting?</label>
+      <input type = "radio" name = "question" value = "yes">Yes
+      <input type = "radio" name = "question" value = "no">No
+      <br>
+      <label for "color">Color</label> <input type = "color" name = "color">
+      <input type = "submit" value = "Submit">
+    </form>
+  </body>
+</html>
