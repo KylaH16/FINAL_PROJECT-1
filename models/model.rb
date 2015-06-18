@@ -1,21 +1,23 @@
-class Result
-  def response(name, emotion, question)
-    
-    if emotion == "panic"
-      "calm yourself"
-    elsif emotion == "cute"
-      "SQUACOON"
+class Calc
+  
+  def quad(a, b, c)
+    d = b**2 - (4 * a * c)
+    if d < 0
+      "There are no real x-intercepts."
     else
-      "find the squacoon"
-    end
-    
-    if question == "yes"
-      "Please go see a doctor"
-    else
-      "Great"
+    x1 = (-b + Math.sqrt(d)) / 2 * a
+    x2 = (-b - Math.sqrt(d)) / 2 * a
+      
+      if x1 != x2
+        "x = #{x1} and #{x2}"
+      elsif x1 == x2
+        "x = #{x1}"
+      end
+     
     end
   end
 end
 
-# Test = Result.new
-# puts Test.response("colette", "panic")
+
+Test = Calc.new
+puts Test.quad(1, 3, 10)
