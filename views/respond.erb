@@ -1,8 +1,14 @@
 <!doctype HTML>
 <html>
-  <head><title>Squacoon Response Page</title></head>
+  <head><title>Calculator Response Page</title>
+    <link rel="stylesheet" type = "text/css" href="css/respondstyle.css">
+  </head>
   <body>
     <h2>Response Page</h2>
-    <%= @answer %>
+    <div id = "ans">
+      <%= @answer %>
+    </div>
+    <br>
+    <a href="http://google.com"><div id = "button">Solve another problem</div></a>
   </body>
 </html>

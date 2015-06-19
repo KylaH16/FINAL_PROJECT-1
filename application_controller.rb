@@ -9,13 +9,14 @@ class MyApp < Sinatra::Base
   end
   
   post '/' do
-    na = params[:name]
-    emo = params[:emotion]
-    y_or_n = params[:question]
+    a = params[:a]
+    b = params[:b]
+    c = params[:c]
+    meth = params[:fnc]
     #turns into a hash called params from index.erb
     puts params
-    Responder = Result.new
-    @answer = Responder.response(na, emo, y_or_n)
+    Test = Calc.new
+    @answer = Test.nav(a, b, c, meth)
     #respond.erb
     erb :respond
   end
