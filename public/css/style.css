@@ -7,6 +7,7 @@ body {
 }
 
 .calculator {
+  background: linear-gradient(#A8E4FC, #3C6FFC);
   background-color: #46BFFC;
   opacity: 0.8;
   border: 5px groove #5266E3;
