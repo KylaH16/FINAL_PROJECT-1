@@ -3,7 +3,7 @@
 body {
   background-image: url("http://images3.alphacoders.com/167/167859.jpg");
   background-color: lightblue;
-  font-family: 'Fira Mono';
+  font-family: 'Fira Mono', sans-serif;
 }
 
 .calculator {
