@@ -7,18 +7,19 @@ class Calc
     end
   end
   def quad(a, b, c)
-    if a="" || b="" || c=""
-      "Please it in a number"
+    if a ==""
+      return "Error please enter value for a"
     else
-    a = a.to_f
-    b = b.to_f
-    c = c.to_f
-    d = b**2 - (4 * a * c)
+      af = a.to_f
+      bf = b.to_f
+      cf = c.to_f
+    end
+    d = bf **2 - (4 * af * cf)
     if d < 0
       "There are no real x-intercepts."
     else
-    x1 = (-b + Math.sqrt(d)) / 2 * a
-    x2 = (-b - Math.sqrt(d)) / 2 * a
+    x1 = (-bf + Math.sqrt(d)) / 2 * af
+    x2 = (-bf - Math.sqrt(d)) / 2 * af
       
       if x1 != x2
         "x = #{x1} and #{x2}"
@@ -26,9 +27,11 @@ class Calc
         "x = #{x1}"
       end
     end
-    end
   end
   def pythag(a,b,c)
+    if a == "" && b == "" || b == "" && c == "" || c == "" && a == ""
+      "You are missing one or more numbers."
+    else
     if a == ""
       b= b.to_f
       c= c.to_f
@@ -46,6 +49,7 @@ class Calc
       "C is equal to #{new_c}."
     end
   end
+end
 end
 
 
