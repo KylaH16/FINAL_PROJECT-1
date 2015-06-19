@@ -4,6 +4,8 @@ class Calc
       quad(a,b,c)
     elsif meth == "pythag"
       pythag(a,b,c)
+    else meth == ""
+      "You need to select an equation"
     end
   end
   def quad(a, b, c)
@@ -32,24 +34,24 @@ class Calc
     if a == "" && b == "" || b == "" && c == "" || c == "" && a == ""
       "You are missing one or more numbers."
     else
-    if a == ""
-      b= b.to_f
-      c= c.to_f
-      new_a = Math.sqrt(c**2 - b**2)
-      "A is equal to #{new_a}."
-    elsif b == ""
-      a=a.to_f
-      c=c.to_f
-      new_b = Math.sqrt(c**2 - a**2)
-      "B is equal to #{new_b}."
-    else c == ""
-      a=a.to_f
-      b=b.to_f
-      new_c = Math.sqrt(a**2 + b**2)
-      "C is equal to #{new_c}."
+      if a == ""
+        b= b.to_f
+        c= c.to_f
+        new_a = Math.sqrt(c**2 - b**2)
+        "A is equal to #{new_a}."
+      elsif b == ""
+        a=a.to_f
+        c=c.to_f
+        new_b = Math.sqrt(c**2 - a**2)
+        "B is equal to #{new_b}."
+      else c == ""
+        a=a.to_f
+        b=b.to_f
+        new_c = Math.sqrt(a**2 + b**2)
+        "C is equal to #{new_c}."
+      end
     end
   end
-end
 end
 
 

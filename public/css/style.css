@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Fira+Mono);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body {
   background-image: url("http://images3.alphacoders.com/167/167859.jpg");
@@ -24,6 +25,15 @@ h3 {
 h1 {
   text-align:center;
   font-family:'Fira Mono','Monospace';
+}
+
+.choice {
+  font-family:'Raleway',sans-serif;
+}
+
+#head {
+  text-align:center;
+  color: black;
 }
 
 /* body {
