@@ -1,8 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Fira+Mono);
 
+body {
+  background-image: url("http://images3.alphacoders.com/167/167859.jpg");
+  background-color: lightblue;
+  font-family: 'Fira Mono';
+}
+
 .calculator {
-  border: 3px dashed black;
-  border-radius: 10px;
+  background-color: #46BFFC;
+  opacity: 0.8;
+  border: 5px groove #5266E3;
+  border-radius: 20px;
   padding: 10px;
   margin:auto;
   max-width:500px;
